@@ -1,0 +1,50 @@
+<div class="container p-3 mb-2">
+  <div class="row p-3 mb-2">
+    <div class="col d-flex justify-content-center">
+      <ul class="nav nav-tabs">
+        <li class="nav-items" role="presentation">
+          <a
+            class="nav-link text-dark bg-info m-2"
+            routerLink="/"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            >Home</a
+          >
+        </li>
+
+        <li class="nav-items" role="presentation">
+          <a
+            routerLink="create"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            class="nav-link text-dark bg-info m-2"
+            >Create</a
+          >
+        </li>
+        <li class="nav-items" role="presentation">
+          <a
+            routerLink="members"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            class="nav-link text-dark bg-info m-2"
+            >Become a Member</a
+          >
+        </li>
+        <li class="nav-items" role="presentation">
+          <a
+            routerLink="contact"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            class="nav-link text-dark bg-info m-2"
+            >Contact Us</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col d-flex justify-content-center">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
